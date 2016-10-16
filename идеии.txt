@@ -1,0 +1,61 @@
+1. сайт в виде слайдера
+2. будет несколько отделов с анимацией и эффектами
+3. один раздел в виде галереи (тату фото) анимация в виже туши, можно двигаться по все площади 
+4. первая страница с видео на фоне 
+5. при смене страниц есть крутой прилодер
+
+отделы
+1. ознакомительная страница (название тату студии, видео на фоне) несколько стрелок или с боку кнопки для перехода по
+разделам
+
+- главная (на черном фоне, добавить такую анимацию http://codepen.io/omarshe7ta/pen/xVeWWy)
+- о нас (авторы, мы в соц сетях, )
+- галерея фота (http://tympanus.net/codrops/tag/gallery/)
+- тавары в наличии (пирсинг)
+- (советы)
+
+дизайн 
+
+- черный фон, сочные фотографии тату
+- белые тату пятна 
+
+
+- использование музыки на сайте
+- использование сложного паралекса
+- паралакс при скроле с анимацией алементов которые появльляются
+
+Список галерей (сорцы)
+
+слайдер в виде дерева
+
+https://codyhouse.co/demo/presentation-slideshow/index.html
+
+http://tympanus.net/Blueprints/ZoomSlider/
+
+
+http://tympanus.net/Development/ImageGridEffects/index.html
+http://tympanus.net/Tutorials/DraggableImageBoxesGrid/
+http://tympanus.net/Tutorials/FullscreenGalleryThumbnailFlip/
+
+http://codepen.io/golle404/pen/qZZLLM
+
+http://codepen.io/chinchang/pen/lLzyB
+
+
+http://pupunzi.com/#mb.components/mb.scrollable/scrollable.html
+
+
+https://codyhouse.co/demo/animated-svg-image-slider/curve.html
+
+
+
+
+
+
+перетаскивание элементов
+
+http://mcpants.github.io/jquery.shapeshift/
+
+паралакс
+
+http://www.jqueryscript.net/demo/3D-Background-Parallax-Scrolling-Effect-Using-jQuery-CSS3/
