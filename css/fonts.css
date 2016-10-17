@@ -7,3 +7,28 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+
+@font-face {
+	font-family: "Caprice";
+	src: url("../fonts/Caprice/Caprice.otf");
+	src: url("../fonts/Caprice/Caprice.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "death-star";
+	src: url("../fonts/death-star/Death Star.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+@font-face {
+	font-family: "dearest-dorothy";
+	src: url("../fonts/dearest-dorothy/Dearest Dorothy.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

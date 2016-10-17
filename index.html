@@ -21,22 +21,30 @@
 
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
-	
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
 
 	<script src="libs/modernizr/modernizr.js"></script>
-
+<script src="libs/pixi.js-master/pixi.js"></script>
 </head>
 
 <body>
 
 	<!-- Здесь пишем код -->
 
-	<nav class="navbar navbar-default">
+
+
+<section style="height: 600px; z-index: 1000;
+    position: relative;">
+
+  <!-- NAV -->
+
+  <nav class="navbar navbar-default nav_mod">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+   
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -44,51 +52,351 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+     
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Аксессуары</a></li>
+          <li><a href="#">О нас</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
+  </div>
+  </nav> 
 
 
+
+
+  <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+              <div class="header_name">
+
+                 <h1>Hand Made Modification</h1>
+                 <span>ТАТУ-СТУДИЯ СМОЛЕНСКА</span>
+
+              </div>
+           
+            </div>
+
+        </div>
+
+  </div>
+
+</section>
+
+<section style="height:1000px">
+
+   <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+              
+              <h2>
+                Галерея
+              </h2>
+
+                  <div class="container">
+                
+                  <div class="content">
+                    <div class="grid">
+                      <div class="grid__item" data-size="1280x853">
+                        <a href="img/original/1.jpg" class="img-wrap"><img src="img/thumbs/1.jpg" alt="img01" />
+                          <div class="description description--grid">Assemblage</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="958x1280">
+                        <a href="img/original/2.jpg" class="img-wrap"><img src="img/thumbs/2.jpg" alt="img02" />
+                          <div class="description description--grid">Demesne</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="837x1280">
+                        <a href="img/original/3.jpg" class="img-wrap"><img src="img/thumbs/3.jpg" alt="img03" />
+                          <div class="description description--grid">Felicity</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x961">
+                        <a href="img/original/4.jpg" class="img-wrap"><img src="img/thumbs/4.jpg" alt="img04" />
+                          <div class="description description--grid">Propinquity</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1131">
+                        <a href="img/original/5.jpg" class="img-wrap"><img src="img/thumbs/5.jpg" alt="img05" />
+                          <div class="description description--grid">Ephemeral</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x857">
+                        <a href="img/original/6.jpg" class="img-wrap"><img src="img/thumbs/6.jpg" alt="img06" />
+                          <div class="description description--grid">Surreptitious</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1280">
+                        <a href="img/original/7.jpg" class="img-wrap"><img src="img/thumbs/7.jpg" alt="img07" />
+                          <div class="description description--grid">Scintilla</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x853">
+                        <a href="img/original/8.jpg" class="img-wrap"><img src="img/thumbs/8.jpg" alt="img08" />
+                          <div class="description description--grid">Vestigial</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="865x1280">
+                        <a href="img/original/9.jpg" class="img-wrap"><img src="img/thumbs/9.jpg" alt="img09" />
+                          <div class="description description--grid">Zephyr</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1280">
+                        <a href="img/original/10.jpg" class="img-wrap"><img src="img/thumbs/10.jpg" alt="img10" />
+                          <div class="description description--grid">Desideratum</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x850">
+                        <a href="img/original/11.jpg" class="img-wrap"><img src="img/thumbs/11.jpg" alt="img11" />
+                          <div class="description description--grid">Quixotic</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x853">
+                        <a href="img/original/1.jpg" class="img-wrap"><img src="img/thumbs/1.jpg" alt="img01" />
+                          <div class="description description--grid">Assemblage</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="958x1280">
+                        <a href="img/original/2.jpg" class="img-wrap"><img src="img/thumbs/2.jpg" alt="img02" />
+                          <div class="description description--grid">Demesne</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="837x1280">
+                        <a href="img/original/3.jpg" class="img-wrap"><img src="img/thumbs/3.jpg" alt="img03" />
+                          <div class="description description--grid">Felicity</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x961">
+                        <a href="img/original/4.jpg" class="img-wrap"><img src="img/thumbs/4.jpg" alt="img04" />
+                          <div class="description description--grid">Propinquity</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1131">
+                        <a href="img/original/5.jpg" class="img-wrap"><img src="img/thumbs/5.jpg" alt="img05" />
+                          <div class="description description--grid">Ephemeral</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x857">
+                        <a href="img/original/6.jpg" class="img-wrap"><img src="img/thumbs/6.jpg" alt="img06" />
+                          <div class="description description--grid">Surreptitious</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1280">
+                        <a href="img/original/7.jpg" class="img-wrap"><img src="img/thumbs/7.jpg" alt="img07" />
+                          <div class="description description--grid">Scintilla</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x853">
+                        <a href="img/original/8.jpg" class="img-wrap"><img src="img/thumbs/8.jpg" alt="img08" />
+                          <div class="description description--grid">Vestigial</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="865x1280">
+                        <a href="img/original/9.jpg" class="img-wrap"><img src="img/thumbs/9.jpg" alt="img09" />
+                          <div class="description description--grid">Zephyr</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x1280">
+                        <a href="img/original/10.jpg" class="img-wrap"><img src="img/thumbs/10.jpg" alt="img10" />
+                          <div class="description description--grid">Desideratum</div>
+                        </a>
+                      </div>
+                      <div class="grid__item" data-size="1280x850">
+                        <a href="img/original/11.jpg" class="img-wrap"><img src="img/thumbs/11.jpg" alt="img11" />
+                          <div class="description description--grid">Quixotic</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- /grid -->
+                    <div class="preview">
+                      <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+                      <div class="description description--preview"></div>
+                    </div>
+                    <!-- /preview -->
+                  </div>
+
+                  </div>
+
+            </div>
+        </div>
+
+   </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container" style="height: 800px;">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+              
+
+                 <h2>
+                    Аксессуары
+                 </h2>
+                
+
+             
+           
+            </div>
+
+        </div>
+
+  </div>
+
+</section>
+
+
+<section>
+  <div class="container" style="height: 800px;">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+              
+
+                 <h2>О нас</h2>
+
+
+<embed height="0" width="0" 
+  src="https://www.youtube.com/embed/IUK9Sfc2EfU&autoplay=1&loop=1" />
+              
+              <!--     <iframe frameborder="0" height="100%" width="100%" 
+                src="https://www.youtube.com/embed/IUK9Sfc2EfU?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1">
+              </iframe> -->
+               
+            </div>
+
+        </div>
+
+  </div>
+
+</section>
+
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      // create SVG circle overlay and append it to the preview element
+      function createCircleOverlay(previewEl) {
+        var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        dummy.setAttributeNS(null, 'version', '1.1');
+        dummy.setAttributeNS(null, 'width', '100%');
+        dummy.setAttributeNS(null, 'height', '100%');
+        dummy.setAttributeNS(null, 'class', 'overlay');
+        var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        circle.setAttributeNS(null, 'cx', 0);
+        circle.setAttributeNS(null, 'cy', 0);
+        circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
+        dummy.appendChild(g);
+        g.appendChild(circle);
+        previewEl.appendChild(dummy);
+      }
+      
+      new GridFx(document.querySelector('.grid'), {
+        onInit : function(instance) {
+          createCircleOverlay(instance.previewEl);
+        },
+        onResize : function(instance) {
+          instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+        },
+        onOpenItem : function(instance, item) {
+          // item's image
+          var gridImg = item.querySelector('img'),
+            gridImgOffset = gridImg.getBoundingClientRect(),
+            win = {width: document.documentElement.clientWidth, height: window.innerHeight},
+            SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
+            SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
+            
+          SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+          // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
+          if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
+            SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+          }
+          else {
+            SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+          }
+        }
+      });
+    })();
+  </script>
+
+
+ 
+
+<script id="fragShader" type="shader-code">
+    precision mediump float;
+    uniform vec2      resolution;
+    uniform float     time;
+    uniform float     alpha;
+    uniform vec2      speed;
+    uniform float     shift;
+
+
+    float rand(vec2 n) {
+      //This is just a compounded expression to simulate a random number based on a seed given as n
+        return fract(cos(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
+    }
+
+    float noise(vec2 n) {
+      //Uses the rand function to generate noise
+        const vec2 d = vec2(0.0, 1.0);
+        vec2 b = floor(n), f = smoothstep(vec2(0.0), vec2(1.0), fract(n));
+        return mix(mix(rand(b), rand(b + d.yx), f.x), mix(rand(b + d.xy), rand(b + d.yy), f.x), f.y);
+    }
+
+    float fbm(vec2 n) {
+      //fbm stands for "Fractal Brownian Motion" https://en.wikipedia.org/wiki/Fractional_Brownian_motion
+        float total = 0.0, amplitude = 1.0;
+        for (int i = 0; i < 4; i++) {
+         total += noise(n) * amplitude;
+          n += n;
+          amplitude *= 0.5;
+        }
+        return total;
+    }
+
+    void main() {
+        //This is where our shader comes together
+        const vec3 c1 = vec3(126.0/255.0, 0.0/255.0, 97.0/255.0);
+        const vec3 c2 = vec3(173.0/255.0, 0.0/255.0, 161.4/255.0);
+        const vec3 c3 = vec3(0.2, 0.0, 0.0);
+        const vec3 c4 = vec3(164.0/255.0, 1.0/255.0, 214.4/255.0);
+        const vec3 c5 = vec3(0.1);
+        const vec3 c6 = vec3(0.9);
+
+        //This is how "packed" the smoke is in our area. Try changing 8.0 to 1.0, or something else
+        vec2 p = gl_FragCoord.xy * 8.0 / resolution.xx;
+        //The fbm function takes p as its seed (so each pixel looks different) and time (so it shifts over time)
+        float q = fbm(p - time * 0.1);
+        vec2 r = vec2(fbm(p + q + time * speed.x - p.x - p.y), fbm(p + q - time * speed.y));
+        vec3 c = mix(c1, c2, fbm(p + r)) + mix(c3, c4, r.x) - mix(c5, c6, r.y);
+        float grad = gl_FragCoord.y / resolution.y;
+        gl_FragColor = vec4(c * cos(shift * gl_FragCoord.y / resolution.y), 1.0);
+        gl_FragColor.xyz *= 1.0-grad;
+    }
+</script>
 	
 	<div class="hidden"></div>
 
@@ -108,7 +416,10 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
-	
+	<script src="libs/Swiper-3.3.1/Swiper-3.3.1/dist/js/swiper.js" type="text/javascript"></script>
+
+
+
 	<script src="js/common.js"></script>
 	
 </body>
