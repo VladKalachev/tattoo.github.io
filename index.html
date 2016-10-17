@@ -25,6 +25,8 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="libs/hw-parallax-master/src/hw-parallax.css">
 <link rel="stylesheet" type="text/css" href="css/style1.css" />
 
 	<script src="libs/modernizr/modernizr.js"></script>
@@ -33,7 +35,32 @@
 
 <body>
 
-	<!-- Здесь пишем код -->
+<div id="block" style="width: 100%; height: 500px;" data-vide-bg="video/ocean" data-vide-options="position: 0% 50%"></div>
+
+	<!-- HEADER -->
+
+<header>
+
+
+
+<!--  <div class="parallax-inner"  data-image="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.jpg" data-width="2560" data-height="1600">
+
+<div class="video-bg-container"><div class="video-bg-fallback" style="background-image:url(http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.jpg)"></div><span class="mejs-offscreen">Video Player</span><div id="mep_0" class="mejs-container svg video-bg mejs-video" tabindex="0" role="application" aria-label="Video Player" style="width: 640px; height: 360px;"><div class="mejs-inner"><div class="mejs-mediaelement"><video class="video-bg" preload="auto" autoplay="" loop="loop" muted="" volume="0" style="width: 1349px; height: 760px; margin-top: -246.5px; margin-left: 0px;" src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.mp4" width="640" height="360"><source src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.mp4" type="video/mp4"></video></div></div></div><div class="video-bg-overlay"></div></div>       </div>
+
+ </div> -->
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
 
 
 
@@ -42,7 +69,7 @@
 
   <!-- NAV -->
 
-  <nav class="navbar navbar-default nav_mod">
+<!--   <nav class="navbar navbar-default nav_mod">
   <div class="container-fluid">
    
     <div class="navbar-header">
@@ -68,7 +95,25 @@
   </div>
   </nav> 
 
-
+<div class="video-bg-container">
+                   <div class="video-bg-fallback" style="background-image:url(http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.jpg)">
+                   </div>
+                   <span class="mejs-offscreen">Video Player</span>
+                   
+                   <div id="mep_0" class="mejs-container svg video-bg mejs-video" tabindex="0" role="application" aria-label="Video Player" style="width: 640px; height: 360px;">
+                     <div class="mejs-inner">
+                       <div class="mejs-mediaelement">
+                       <video class="video-bg" preload="auto" autoplay="" loop="loop" muted="" volume="0" style="width: 1349px; height: 760px; margin-top: -254.5px; margin-left: 0px;" src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.mp4" width="640" height="360">
+                       <source src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.mp4" type="video/mp4">
+                       </video>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   <div class="video-bg-overlay">
+                   </div>
+                 </div>
+ -->
 
 
   <div class="container">
@@ -275,6 +320,7 @@
                  <h2>О нас</h2>
 
 
+
 <embed height="0" width="0" 
   src="https://www.youtube.com/embed/IUK9Sfc2EfU&autoplay=1&loop=1" />
               
@@ -345,58 +391,7 @@
 
  
 
-<script id="fragShader" type="shader-code">
-    precision mediump float;
-    uniform vec2      resolution;
-    uniform float     time;
-    uniform float     alpha;
-    uniform vec2      speed;
-    uniform float     shift;
 
-
-    float rand(vec2 n) {
-      //This is just a compounded expression to simulate a random number based on a seed given as n
-        return fract(cos(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
-    }
-
-    float noise(vec2 n) {
-      //Uses the rand function to generate noise
-        const vec2 d = vec2(0.0, 1.0);
-        vec2 b = floor(n), f = smoothstep(vec2(0.0), vec2(1.0), fract(n));
-        return mix(mix(rand(b), rand(b + d.yx), f.x), mix(rand(b + d.xy), rand(b + d.yy), f.x), f.y);
-    }
-
-    float fbm(vec2 n) {
-      //fbm stands for "Fractal Brownian Motion" https://en.wikipedia.org/wiki/Fractional_Brownian_motion
-        float total = 0.0, amplitude = 1.0;
-        for (int i = 0; i < 4; i++) {
-         total += noise(n) * amplitude;
-          n += n;
-          amplitude *= 0.5;
-        }
-        return total;
-    }
-
-    void main() {
-        //This is where our shader comes together
-        const vec3 c1 = vec3(126.0/255.0, 0.0/255.0, 97.0/255.0);
-        const vec3 c2 = vec3(173.0/255.0, 0.0/255.0, 161.4/255.0);
-        const vec3 c3 = vec3(0.2, 0.0, 0.0);
-        const vec3 c4 = vec3(164.0/255.0, 1.0/255.0, 214.4/255.0);
-        const vec3 c5 = vec3(0.1);
-        const vec3 c6 = vec3(0.9);
-
-        //This is how "packed" the smoke is in our area. Try changing 8.0 to 1.0, or something else
-        vec2 p = gl_FragCoord.xy * 8.0 / resolution.xx;
-        //The fbm function takes p as its seed (so each pixel looks different) and time (so it shifts over time)
-        float q = fbm(p - time * 0.1);
-        vec2 r = vec2(fbm(p + q + time * speed.x - p.x - p.y), fbm(p + q - time * speed.y));
-        vec3 c = mix(c1, c2, fbm(p + r)) + mix(c3, c4, r.x) - mix(c5, c6, r.y);
-        float grad = gl_FragCoord.y / resolution.y;
-        gl_FragColor = vec4(c * cos(shift * gl_FragCoord.y / resolution.y), 1.0);
-        gl_FragColor.xyz *= 1.0-grad;
-    }
-</script>
 	
 	<div class="hidden"></div>
 
@@ -416,7 +411,9 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+  <script src="libs/hw-parallax-master/src/hw-parallax.js"></script>
 	<script src="libs/Swiper-3.3.1/Swiper-3.3.1/dist/js/swiper.js" type="text/javascript"></script>
+<script src="libs/Vide-0.5.0/src/jquery.vide.js"></script>
 
 
 

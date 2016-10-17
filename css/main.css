@@ -15,6 +15,10 @@
 	opacity: 1;
 }
 
+ html, body {
+      margin: 0;
+    }
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -102,13 +106,6 @@ canvas {
 	}
 }
 
-.block1 {
-	background: url(../img/tatto_png/block1.png);
-	    width: 632px;
-    background-repeat: no-repeat;
-    height: 500px;
-    position: absolute;
-}
 
 .nav_mod {
 	background-color: rgba(255,255,255,.0);
@@ -133,31 +130,7 @@ canvas {
     color: #830093 !important;
 }
 
-/* all section */
 
-
-/* footer */
-
-
-/* video */
-
-body {
-  margin: 0;
-  background: #000; 
-}
-video { 
-    
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-   
-  background-size: cover;
-  transition: 1s opacity;
-}
 .stopfade { 
    opacity: .5;
 }
@@ -214,3 +187,6 @@ a:hover{
   html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
+
+
+

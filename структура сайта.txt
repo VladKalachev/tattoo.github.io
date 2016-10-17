@@ -2,6 +2,8 @@
 
 
 1.главная
+
+https://github.com/ziad-saab/hw-parallax - паралакс для выравнивая видео
 http://codepen.io/omarshe7ta/pen/xVeWWy
 
 2.галерея
