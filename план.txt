@@ -1,9 +1,13 @@
+группа вк
+https://vk.com/modification67
+http://demo.wolfthemes.com/tattoopro/
+
 1. в новом шаблоне сделать адаптивное видео в фоне +
 2. перенести все сделанные элементы в этот шаблон +
 
-3. добавить верхнее меню (https://codepen.io/adammacias/pen/WvxVRP)
+3. добавить верхнее меню (https://codepen.io/adammacias/pen/WvxVRP) +
 
-анимаци€ верхней иконке (bootstrap)
+анимаци€ верхней иконке (bootstrap) +
 http://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/
 
 исправление бага nav top affix.js
@@ -12,8 +16,14 @@ https://github.com/twbs/bootstrap/issues/13258
 
 4. добавить раздел товаров (пирнсинг)
 
+галере€ в виде мазайки
+
+http://masonry.desandro.com/
+
 5. добавить форму обратной св€зи
 
 6. добавить футер (виджеты)
 
 7. добавить 3ƒ галерею 
+
+8. добавить логотип на header
