@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+	/*nav bar*/
+
+/*	$('.header-fix').click(function(){
+ 
+  if ($('#navbar-main').hasClass('affix-top')){
+  	 console.log('Вы нажали на элемент "foo"');
+  	 $('#navbar-main').removeClass('affix');
+  	} else
+
+
+  	 if ($('#navbar-main').hasClass('affix')) {
+
+  	 	console.log(111);
+  		$('#navbar-main').removeClass('affix');
+  		$('#navbar-main').addClass('affix-top');
+  	}
+
+});*/
+
+
+var affixElement = '#navbar-main';
+
+$(affixElement).affix({
+  offset: {
+    // Distance of between element and top page
+    top: function() { return 40; }
+    
+  }
+});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

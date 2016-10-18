@@ -55,7 +55,6 @@ html.js .loader_inner {
 }
 
 body {
-	background-color: #000;
 	font-family: sans-serif;
 	font-size: 16px;
 	min-width: 320px;
@@ -69,16 +68,20 @@ body {
 }
 
 
-/* swiper */
 
 
 
 /* header */
 
+header {
+	height: 700px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 .header_name {
 	position: absolute;
-    top: 175px;
-    left: 29%;
+    top: 233px;
+    left: 27%;
     color: white;
 }
 
@@ -94,43 +97,40 @@ body {
 }
 
 
-canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
 @media (max-width: 770px) {
 		.header_name span {
 		float: none;
 	}
+
+	
+	   
 }
 
+@media (max-width: 667px) {
+	header {
+		 background-color: #000;
+		 background: url(../video/tattoopro.jpg);
+	}
 
-.nav_mod {
-	background-color: rgba(255,255,255,.0);
-    border: 0;
-}
-
-.nav_mod a {
-	    color: #fff !important;
-	    font-size: 24px;
-   		font-family: Caprice;
-}
-
-
-@media (min-width: 768px){
-	.navbar-nav > li > a {
-	    padding-top: 30px;
+	.navbar-inverse {
+    background-color: #222 !important;
+    border-color: #080808 !important;
 	}
 }
 
+ @media (min-width: 667px) { 
 
-.nav > li > a:hover {
-    color: #830093 !important;
+	.affix {
+		padding: 16px;
+	}
+	.navbar-inverse {
+		padding: 16px;	
+	}
+
 }
+ 
 
-
+/* galary */
 .stopfade { 
    opacity: .5;
 }
@@ -173,20 +173,117 @@ a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  background:rgba(0,0,0,0.5);
+ 
   padding: .5rem;
   transition: .6s background; 
 }
 a:hover{
   background:rgba(0,0,0,0.9);
 }
-@media screen and (max-width: 500px) { 
-  div{width:70%;} 
-}
+
 @media screen and (max-device-width: 800px) {
   html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
 
 
+/* parallax */
+@media screen and (max-width: 900px) { 
 
+	.crt-parallaxvideo video {
+		height: 671px;
+	}
+
+}
+
+.crt-parallaxvideo video {
+	z-index: -100;
+	opacity: 0.8;
+}
+
+/* top bar */
+#navbar-main {
+	z-index: 1000;
+}
+
+#navbar-main.affixed-top {
+ background: black;
+}
+#navbar-main.affix {
+ 
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#navbar-main.affix-bottom {
+	background: red; 
+}
+ 
+
+
+
+
+
+/* srction */
+ section {
+background-color: #fff;
+z-index: 100;
+} 
+
+.navbar {
+	margin-bottom: 0px !important;
+}
+
+.navbar-inverse.affix-top {
+	background-color: rgba(34, 34, 34, 0);
+    border-color: rgba(34, 34, 34, 0);
+        background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
+
+
+ @media (max-width: 667px) { 
+
+	.navbar-nav {
+		height: 600px;
+	}
+
+}
+
+/* аanimat */
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
