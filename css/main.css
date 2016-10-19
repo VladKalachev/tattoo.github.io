@@ -510,21 +510,85 @@ p, body .main_footer, .s_about li {
 
 
 .master1 {
-	background-image: url(../img/3778385879_49a7662802_o-960x960.jpg);
+	background-image: url(../img/1.jpg);
 	background-repeat: no-repeat;
 	background-size: 534px;
 }
 
 .master2 {
-	background-image: url(../img/4998295763_546b93f07c_o-960x960.jpg);
+	background-image: url(../img/2.jpg);
 	background-repeat: no-repeat;
 	background-size: 534px;
 }
 
 .master3 {
-	background-image: url(../img/6024501835_d9015edc8e_o-960x960.jpg);
+	background-image: url(../img/3.jpg);
 	background-repeat: no-repeat;
 	background-size: 534px;
+}
+
+
+
+.product1 {
+	background-image: url(../img/cart/1.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+
+.product2 {
+	background-image: url(../img/cart/2.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product3 {
+	background-image: url(../img/cart/3.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+
+.product4 {
+	background-image: url(../img/cart/4.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product5 {
+	background-image: url(../img/cart/5.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product6 {
+	background-image: url(../img/cart/6.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product7 {
+	background-image: url(../img/cart/7.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product8 {
+	background-image: url(../img/cart/8.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product9 {
+	background-image: url(../img/cart/9.jpg);
+	background-repeat: no-repeat;
+	
+}
+
+.product10 {
+	background-image: url(../img/cart/10.jpg);
+	background-repeat: no-repeat;
+	
 }
 
 
@@ -545,6 +609,46 @@ p, body .main_footer, .s_about li {
 }
 @media (max-width: 550px) { /*breakpoint*/
     .containerMy .master_block {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.containerMy2{
+    font-size: 0; /*fix white space*/
+}
+
+
+.containerMy2 .master_block {
+    font-size: 21px; /*reset font size*/
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    box-sizing: border-box;
+     padding-top: 164px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 1050px) { /*breakpoint*/
+    .containerMy2 .master_block {
+        display: inline-block;
+    	width: 25%;
+
+    }
+}
+
+
+@media (max-width: 900px) { /*breakpoint*/
+    .containerMy2 .master_block {
+        display: inline-block;
+    	width: 50%;
+    }
+}
+
+@media (max-width: 550px) { /*breakpoint*/
+    .containerMy2 .master_block {
         display: block;
         width: 100%;
     }
@@ -684,4 +788,8 @@ p {
 
 .w h2 {
 	color: #000;
+}
+
+.modFix .master_block {
+	    height: 376px;
 }
