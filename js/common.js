@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+
+
+	/*gallery*/
+
+$('.popupImg').magnificPopup({
+  type: 'image'
+  // other options
+});
+
 	/*nav bar*/
 
 /*	$('.header-fix').click(function(){
