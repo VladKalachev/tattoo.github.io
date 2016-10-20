@@ -1,6 +1,21 @@
 $(document).ready(function() {
 
 
+/*carousel*/
+$(".carousel").owlCarousel({
+		loop : true,
+		responsive:{
+        0:{
+            items:1,
+            nav:true
+        }
+    },
+// удаляет надпись стрелок вперед-назад
+    navText : "",
+		
+
+	});
+
 
 	/*gallery*/
 
