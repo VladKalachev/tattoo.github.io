@@ -1,6 +1,16 @@
 $(document).ready(function() {
 
 
+
+/*scrolle */
+
+$('.navbar-nav a').mPageScroll2id({
+    offset:20
+});
+/*VK*/
+
+
+
 /*carousel*/
 $(".carousel").owlCarousel({
 		loop : true,

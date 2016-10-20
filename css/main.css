@@ -797,7 +797,7 @@ p {
 /* ///////// */
 
 .s_rewview {
-    background-image: url(../img/middle_bg.jpg);
+    background-image: url(../img/5195201264_8231e306c7_o-960x960.jpg);
     background-repeat: repeat-x;
     background-attachment: fixed;
     min-height: 500px;
@@ -888,4 +888,77 @@ section.s_dark h2, section.s_dark h3, section.s_dark p {
     text-align: center;
 }
 
+
+.s_rewview span {
+	color:#fff;
+
+}
+
+
+.s_rewview .container {
+	text-align: center;
+}
+
+
+.button.btn_red {
+    background-color: #9B1818;
+}
+
+
+a.button {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 32px;
+    background-color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "RobotoBold", sans-serif;
+}
+
 /* //// */
+
+
+.s_rewview2 {
+    background-image: url(../img/14721778903_758749f300_k-960x480.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+}
+
+
+.s_rewview2 span {
+	color:#fff;
+
+}
+
+.s_rewview2 .container {
+	text-align: center;
+}
+
+/* top */
+
+.top {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+	height: 50px;
+	bottom: 20px;
+	background-color: #fff;
+	
+}
