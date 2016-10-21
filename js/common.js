@@ -1,12 +1,37 @@
 $(document).ready(function() {
 
 
+if ($(window).scrollTop() >= 0 ) {
+	$('.top').addClass('mPS2id-highlight');
+
+};
+
+if ($(window).scrollTop() >= 620) {
+$('.top').removeClass('mPS2id-highlight');
+}
+
+
+$(window).scroll(function(){ 
+
+
+	if ($(window).scrollTop() >= 0 ) {
+		$('.top').addClass('mPS2id-highlight');
+	};
+
+	if ($(window).scrollTop() >= 620) {
+		$('.top').removeClass('mPS2id-highlight');
+	}
+
+
+});
+
 
 /*scrolle */
 
-$('.navbar-nav a').mPageScroll2id({
+$('.navbar-nav a, .top').mPageScroll2id({
     offset:20
 });
+
 /*VK*/
 
 

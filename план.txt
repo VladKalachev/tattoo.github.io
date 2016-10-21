@@ -37,7 +37,7 @@ http://ruseller.com/lessons/les1878/Demo/demo.html - скрол страниц по секциям
 структура сайта
 
 
-!!! http://webdesign-master.ru/blog/tools/24.html - допилить сроклл!!!
++ !!! http://webdesign-master.ru/blog/tools/24.html - допилить сроклл!!! +
 
 - header
 

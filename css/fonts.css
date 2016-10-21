@@ -32,3 +32,32 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: "fonts1";
+	src: url("../fonts/10220.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "fonts2";
+	src: url("../fonts/10115.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "fonts3";
+	src: url("../fonts/10155.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: "fonts4";
+	src: url("../fonts/raleway-family-v3.0/Raleway-SemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

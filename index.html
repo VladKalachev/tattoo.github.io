@@ -68,7 +68,7 @@
           <span class="icon-bar middle-bar"></span>
           <span class="icon-bar bottom-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
+    
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         
@@ -76,8 +76,8 @@
           <li >
           <a href="#top">Главная</a>
           </li>
-            <li><a href="#">Галерея</a></li>
-            <li><a href="#s_2">Наши мастера</a></li>
+            <li><a href="#" class="redClass">Галерея</a></li>
+            <li><a href="#s_2">Мастера</a></li>
              <li><a href="#s_3">Работы</a></li>
             <li><a href="#s_4">Товары</a></li>
             <li><a href="#s_5">Отзывы</a></li>
@@ -138,21 +138,23 @@
 
 <!-- OUR MASTERS-->
 
-<section id="s_1">
-<div class="container-fluid">
-<div class="row">
+<!-- SECTION 1-->
 
-            <div class="col-md-12">
+<section id="s_1" class="main_galery ">
+  <div class="container">
+  <div class="row">
 
-                 <h2>
-                    Наши мастера
-                 </h2>
+              <div class="col-md-12">
 
-           
-            </div>
+                   <h2 class="titleWork">
+                      Наши мастера
+                   </h2>
 
-        </div>
-</div>
+             
+              </div>
+
+          </div>
+  </div>
 
 <div class="containerMy">
     <a href="https://vk.com/id172984611"><div class="master_block master1">Doc Serg</div></a>
@@ -160,10 +162,9 @@
     <a href="https://vk.com/id152408889"><div class="master_block master3">Алексей Молчанов</div></a>
 </div>
 
-
-
-
 </section>
+
+
 
 
 <section  id="s_2" class="main_galery">
@@ -293,19 +294,6 @@
   </div>
  </section>
 
-<!--
-<div class="containerMy2 modFix">
-    <a href="#"><div class="master_block product1">Картриджи</div></a>
-    <a href="#"><div class="master_block product2">Барьерная защита на клипкорд 200 метров</div></a>
-    <a href="#"><div class="master_block product3">Типса (носик-лейка)</div></a>
-    <a href="#"><div class="master_block product4">Иглы</div></a>
-    <a href="#"><div class="master_block product5">Тара под краску</div></a>
-    <a href="#"><div class="master_block product6">Тара под краску</div></a>
-    <a href="#"><div class="master_block product7">ТКТх</div></a>
-    <a href="#"><div class="master_block product8">Витамины А, Д.</div></a>
-    <a href="#"><div class="master_block product9">Вазелин</div></a>
-    <a href="#"><div class="master_block product10">Зеленое мыло</div></a>
-</div> -->
 
 
 
@@ -372,20 +360,32 @@
 
 
 
-<section class="s_conracts">
-<div class="contacts_top">
-  <h2>Как нас найти: </h2>
+<section class="main_galery">
+   <div class="container">
+        <div class="row">
 
-</div>
+            <div class="col-md-12">
+            <h2 class="titleWork">
+               Как нас найти:
+              </h2>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="s_conracts">
+
   <div class="wrapper clearfix">
     <div class="tab_content">
+        
         <div class="tab_item">
-        Центральная ул.дом 22, корпус 2
-    <div class="map">
+        
 
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cncpNMtmNp97kMzP7eObLCR9bsyvE31a&amp;height=480&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+            <div class="map">
 
-</div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cncpNMtmNp97kMzP7eObLCR9bsyvE31a&amp;height=480&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
+            </div>
 
         </div>
         
@@ -480,60 +480,10 @@ VK.Widgets.Group("vk_groups", {mode: 3, width: "300", height: "500", color1: 'FF
 <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/classie.js"></script>
- <!--  <script src="js/main.js"></script> -->
- <!--  <script>
- 
-   (function() {
-     // create SVG circle overlay and append it to the preview element
-     function createCircleOverlay(previewEl) {
-       var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-       dummy.setAttributeNS(null, 'version', '1.1');
-       dummy.setAttributeNS(null, 'width', '100%');
-       dummy.setAttributeNS(null, 'height', '100%');
-       dummy.setAttributeNS(null, 'class', 'overlay');
-       var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-       var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-       circle.setAttributeNS(null, 'cx', 0);
-       circle.setAttributeNS(null, 'cy', 0);
-       circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
-       dummy.appendChild(g);
-       g.appendChild(circle);
-       previewEl.appendChild(dummy);
-     }
-     
-     new GridFx(document.querySelector('.grid'), {
-       onInit : function(instance) {
-         createCircleOverlay(instance.previewEl);
-       },
-       onResize : function(instance) {
-         instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-       },
-       onOpenItem : function(instance, item) {
-         // item's image
-         var gridImg = item.querySelector('img'),
-           gridImgOffset = gridImg.getBoundingClientRect(),
-           win = {width: document.documentElement.clientWidth, height: window.innerHeight},
-           SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
-           SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
-           
-         SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
-         // set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
-         if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
-           SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-         }
-         else {
-           SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
-         }
-       }
-     });
-   })();
- </script> -->
 
 
- 
-<div class="top">
-  
-</div>
+
+ <a href="#top" class="top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
 
 	
 	<div class="hidden"></div>
