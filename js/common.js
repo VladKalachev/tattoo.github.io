@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+
+	/*height page1*/
+	
+
+	var he1 = $(window).height(),
+	    he2 = he1 - 200;
+
+	$('.header1').css('height', he1);
+	$('.bottomBtn').css('top', he2);
+
      
 	if ($(window).scrollTop() >= 0 ) {
 		$('.top').addClass('mPS2id-highlight');
