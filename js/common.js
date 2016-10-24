@@ -5,11 +5,16 @@ $(document).ready(function() {
 	
 
 	var he1 = $(window).height(),
-	    he2 = he1 - 200;
+	    he2 = he1 - 200,
+	    w1 = $(window).width();
 
 	$('.header1').css('height', he1);
 	$('.bottomBtn').css('top', he2);
 
+	if (w1 < 1500) {
+		$('.crt-parallaxvideo video').css('height', he1);
+	}
+	
      
 	if ($(window).scrollTop() >= 0 ) {
 		$('.top').addClass('mPS2id-highlight');
