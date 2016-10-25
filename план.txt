@@ -2,6 +2,8 @@
 https://vk.com/modification67
 http://demo.wolfthemes.com/tattoopro/
 
+
+
 instagramm
 https://www.instagram.com/docserg/
 
@@ -29,6 +31,8 @@ http://masonry.desandro.com/
 
 7. добавить 3Д галерею 
 
+http://znoy.cc/
+
 8. добавить логотип на header +
 
 http://ruseller.com/lessons/les1878/Demo/demo.html - скрол страниц по секциям 
@@ -55,15 +59,15 @@ http://ruseller.com/lessons/les1878/Demo/demo.html - скрол страниц по секциям
 
 6. галарея (3d)
 
-7. сделать крутой прилодер 
+7. сделать крутой прилодер +
 
-9. бага на мобилках с шириной экрана
+9. бага на мобилках с шириной экрана +
 
 10. добавить инстаграмм виждет
 
-11. стрелка в низу (для авто скрола вверх)
+11. стрелка в низу (для авто скрола вверх) +
 
-12. подобрать шрифты и размеры (font-size)
+12. подобрать шрифты и размеры (font-size) +
 
 http://fontawesome.io/ - добавить иконки для соц сетей!
 
