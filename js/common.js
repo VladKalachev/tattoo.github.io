@@ -6,13 +6,21 @@ $(document).ready(function() {
 
 	var he1 = $(window).height(),
 	    he2 = he1 - 200,
+	    he3 = he1/2 - 300,
+	    he4 = he1/2 - 240,
 	    w1 = $(window).width();
+
+
+console.log(he3);
 
 	$('.header1').css('height', he1);
 	$('.bottomBtn').css('top', he2);
+	$('.logo').css('top', he3);
+	$('.header_name').css('top', he4);
 
 	if (w1 < 1500) {
 		$('.crt-parallaxvideo video').css('height', he1);
+
 	}
 	
      

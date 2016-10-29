@@ -518,12 +518,31 @@ p, body .main_footer, .s_about li {
 	    height: 502px;
 }
 
+.master_block:hover {
+    color: red !important;
+}
 
 .master1 {
 	background-image: url(../img/1.jpg);
 	background-repeat: no-repeat;
 	background-size: 534px;
 }
+
+.master1:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+.master2:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.master3:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+
 
 .master2 {
 	background-image: url(../img/2.jpg);
@@ -608,7 +627,6 @@ p, body .main_footer, .s_about li {
 
 
 .containerMy .master_block {
-    font-size: 21px; /*reset font size*/
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
@@ -616,7 +634,10 @@ p, body .main_footer, .s_about li {
     padding-top: 230px;
     color: #fff;
     text-align: center;
-    font-family: "fonts1", sans-serif;
+    font-family: "fonts4", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+
 }
 @media (max-width: 550px) { /*breakpoint*/
     .containerMy .master_block {
@@ -812,13 +833,18 @@ p {
 /* ///////// */
 
 .s_rewview {
-    background-image: url(../img/regnum_picture_1470646106516656_big.jpg);
+    background-image: url(../img/header4.jpg);
    /*  background-repeat: repeat-x; */
     
     min-height: 500px;
     background-position: top center;
    /*  background-size: cover; */
     background-color: #24201E;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-repeat: no-repeat;
 }
 
 section.s_dark h2, section.s_dark h3, section.s_dark p {
