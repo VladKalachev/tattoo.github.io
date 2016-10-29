@@ -11,8 +11,6 @@ $(document).ready(function() {
 	    w1 = $(window).width();
 
 
-console.log(he3);
-
 	$('.header1').css('height', he1);
 	$('.bottomBtn').css('top', he2);
 	$('.logo').css('top', he3);
@@ -55,7 +53,7 @@ $(window).scroll(function(){
 /*scrolle */
 
 $('.navbar-nav a, .top, .bottomBtn').mPageScroll2id({
-    offset:160
+    offset: 80
 });
 
 /*VK*/

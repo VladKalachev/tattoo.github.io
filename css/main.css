@@ -309,7 +309,7 @@ z-index: 100;
     font-size: 22px;
     color: #fff;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 50px;
 }
   
@@ -753,7 +753,7 @@ p, body .main_footer, .s_about li {
 		opacity: 1;
 }
 
-@media all and (max-width: 1080px) {
+ all and (max-width: 1080px) {
 		.portfolio-list li {
 				width: 25%;
 		}
@@ -1071,4 +1071,75 @@ a.bottomBtn:hover {
   
 .top_high {
 	margin-top: 120px;
+}
+
+
+.owl-dots .owl-dot {
+    background: white !important;
+}
+
+ .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #333333 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    background: #FFF !important;
+}
+
+
+ .owl-dots .owl-dot.active {
+    background: none !important;
+    -webkit-box-shadow: 0 0 0 1px #333;
+    box-shadow: 0 0 0 1px #333;
+    background: #848484 !important;
+}
+
+.map {
+    position: relative;
+}
+
+.address_map {
+    background-color: #222;
+    width: 600px;
+    height: 480px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    padding: 50px;
+    text-align: left;
+}
+
+.address_map p {
+    color:#fff;
+    padding-bottom: 25px;
+}
+
+.address_map h2 {
+    color:#fff;
+    font-size: 17px;
+
+}
+
+@media (max-width: 1100px) { 
+    .address_map {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1100px) {   
+    .address2{
+            display: none;
+        }
+    .call_order {
+        margin-left: 240px;
+    }
 }
