@@ -1,5 +1,34 @@
 $(document).ready(function() {
 
+/*popup*/
+
+	$('.mypopup-close').click(function(){
+		console.log(111);
+		$('.mypopup').css('display','none');
+		
+	});
+
+/*	var $body = $('body'),
+	    $btn = $('#fadePopup');
+
+	$body.addClass('popup-active'); // DEMO ONLY - add popup active onload
+
+	(function($body, $btn) {
+
+	    var $popup = $('.mypopup'),
+	        $popupClose = $popup.find('.mypopup-close'),
+	        $overlay = $popup.find('.mypopup-overlay');
+
+	    $btn.add($popupClose).add($overlay).click(function() {
+	        togglePopup();
+	    });
+
+	    var togglePopup = function() {
+	        $body.toggleClass('popup-active');
+	        $popup.toggleClass('active');
+	    };
+
+	})($body, $btn);*/
 
 	/*height page1*/
 	
