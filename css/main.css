@@ -514,19 +514,12 @@ p, body .main_footer, .s_about li {
 
 /* our masters */
 
-.master_block {
-	    height: 502px;
-}
 
 .master_block:hover {
     color: red !important;
 }
 
-.master1 {
-	background-image: url(../img/1.jpg);
-	background-repeat: no-repeat;
-	background-size: 534px;
-}
+
 
 .master1:hover {
     opacity: 0.6;
@@ -542,7 +535,11 @@ p, body .main_footer, .s_about li {
     text-decoration: none;
 }
 
-
+.master1 {
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 534px;
+}
 
 .master2 {
 	background-image: url(../img/2.jpg);
@@ -556,6 +553,25 @@ p, body .main_footer, .s_about li {
 	background-size: 534px;
 }
 
+.master_block {
+    height: 534px;   
+}
+
+@media (min-width: 1000px) {
+    .master1 {
+        background-size: 635px;
+    }
+    .master2 {
+        background-size: 635px;
+    }
+    .master3 {
+        background-size: 635px;
+    }
+    .master_block {
+        height: 580px;
+    }
+
+}
 
 
 .product1 {
