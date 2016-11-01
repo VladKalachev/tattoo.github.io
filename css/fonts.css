@@ -1,39 +1,4 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-
-@font-face {
-	font-family: "Caprice";
-	src: url("../fonts/Caprice/Caprice.otf");
-	src: url("../fonts/Caprice/Caprice.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "death-star";
-	src: url("../fonts/death-star/Death Star.otf");
-	font-style: normal;
-	font-weight: normal;
-}
-
-
-
-@font-face {
-	font-family: "dearest-dorothy";
-	src: url("../fonts/dearest-dorothy/Dearest Dorothy.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
 	font-family: "fonts1";
 	src: url("../fonts/10220.ttf") format("truetype");
 	font-style: normal;
