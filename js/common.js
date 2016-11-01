@@ -16,6 +16,7 @@ $(document).ready(function() {
 	    he2 = he1 - 200,
 	    he3 = he1/2 - 220,
 	    he4 = he1/2 - 180,
+	    he5 = he1/2 - 100,
 	    w1 = $(window).width();
 
 
@@ -23,6 +24,7 @@ $(document).ready(function() {
 	$('.bottomBtn').css('top', he2);
 	$('.logo').css('top', he3);
 	$('.header_name').css('top', he4);
+	$('.header_name2').css('top', he5);
 
 	if (w1 < 1500) {
 		$('.crt-parallaxvideo video').css('height', he1);
@@ -181,7 +183,7 @@ $(window).load(function() {
 $(window).load(function() {
 /*анимация*/
 
-	$(".tattooLogo, .logo, .header_name").animated("zoomInRight", "fadeOut");
+	$(".tattooLogo, .logo, .header_name, .header_name2").animated("zoomInRight", "fadeOut");
 	$(".titleWork").animated("zoomIn", "fadeOut");
 	$('.master1, .master2, .master3').animated("bounceIn", "fadeOut");
 

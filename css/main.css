@@ -1194,3 +1194,53 @@ a.bottomBtn:hover {
 .header_name {
     font-family: Geneva, Arial, Helvetica, sans-serif;
 }
+
+.s_rewview3 {
+    background-image: url(../img/10114453903_e43b4388de_o.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+    position: relative;
+    top: -84px;
+}
+
+.navbar-main.affix-top {
+    border-color: none  !important;
+    background-color: none  !important;
+}
+
+
+.fixfon {
+    background-color: #1c1c1c;
+}
+
+.logoTop {
+    top: 150px;
+}
+
+
+.header_name2 {
+    position: absolute;
+    top: 170px;
+    left: 23%;
+    color: white;
+    text-align: center;
+}
+
+.header_name2 h1{
+     font-size: 36px;
+}
+
+.header_name2 span {
+    font-size: 17px;
+}
+
+
+@media (max-width: 770px) {
+        .header_name2 span {
+        float: none;
+    }      
+}
