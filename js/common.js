@@ -8,35 +8,14 @@ $(document).ready(function() {
 		
 	});
 
-/*	var $body = $('body'),
-	    $btn = $('#fadePopup');
-
-	$body.addClass('popup-active'); // DEMO ONLY - add popup active onload
-
-	(function($body, $btn) {
-
-	    var $popup = $('.mypopup'),
-	        $popupClose = $popup.find('.mypopup-close'),
-	        $overlay = $popup.find('.mypopup-overlay');
-
-	    $btn.add($popupClose).add($overlay).click(function() {
-	        togglePopup();
-	    });
-
-	    var togglePopup = function() {
-	        $body.toggleClass('popup-active');
-	        $popup.toggleClass('active');
-	    };
-
-	})($body, $btn);*/
 
 	/*height page1*/
 	
 
 	var he1 = $(window).height(),
 	    he2 = he1 - 200,
-	    he3 = he1/2 - 300,
-	    he4 = he1/2 - 240,
+	    he3 = he1/2 - 220,
+	    he4 = he1/2 - 180,
 	    w1 = $(window).width();
 
 
@@ -192,4 +171,20 @@ $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
+	/*анимация*/
+
+	
+
+});
+
+
+$(window).load(function() {
+/*анимация*/
+
+	$(".tattooLogo, .logo, .header_name").animated("zoomInRight", "fadeOut");
+	$(".titleWork").animated("zoomIn", "fadeOut");
+	$('.master1, .master2, .master3').animated("bounceIn", "fadeOut");
+
+	$('.top_high, .address_map').animated("flipInY", "fadeOut");
+	$('.form-group, .call_order button').animated("zoomInRight", "fadeOut");
 });
