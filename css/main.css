@@ -1008,6 +1008,45 @@ a.button {
 	text-align: center;
 }
 
+
+.s_rewview4 {
+    background-image: url(../img/bakg2.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+    font-family: "fonts4", sans-serif;
+}
+
+.s_rewview4 h3{
+    font-size: 17px;
+}
+
+.s_rewview4 p{
+    font-size: 15px;
+}
+
+
+.s_rewview4 span {
+    color:#fff;
+
+}
+
+.s_rewview4 .container {
+    text-align: center;
+}
+
+.iremImg {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 27px;
+}
+
+
+
 /* top */
 
 .top {
