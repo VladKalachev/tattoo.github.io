@@ -17,8 +17,9 @@ $(document).ready(function() {
 	    he3 = he1/2 - 220,
 	    he4 = he1/2 - 180,
 	    he5 = he1/2 - 100,
-	    w1 = $(window).width();
-
+	    w1 = $(window).width()
+	    w2 = w1/2;
+console.log(w2);
 
 	$('.header1').css('height', he1);
 	$('.bottomBtn').css('top', he2);
@@ -38,6 +39,11 @@ $(document).ready(function() {
 
 	if ($(window).scrollTop() >= 620) {
 	$('.top').removeClass('mPS2id-highlight');
+	}
+
+	if (w1 < 700) {
+		$('.header_name').css('left', w2-140);
+
 	}
 
 
@@ -189,4 +195,9 @@ $(window).load(function() {
 
 	$('.top_high, .address_map').animated("flipInY", "fadeOut");
 	$('.form-group, .call_order button').animated("zoomInRight", "fadeOut");
+
+	
+	/*$('.master_block').css('opacity','')
+	$('.master_block').removeClass('animated bounceIn' )*/
+
 });
