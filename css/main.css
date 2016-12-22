@@ -1359,3 +1359,49 @@ a.bottomBtn:hover {
     padding: 0px 22px 0 3px;
     text-align: center;
 }
+
+/* left and right top blocks */
+
+.block_inf_all{
+    width: 100%;
+}
+
+.left_inf_bl {
+    width: 50%;
+    display: block;
+    float: right;
+    background: url(../img/Pc2LFEc9bqM.jpg) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.right_inf_bl {
+    width: 50%;
+    display: block;
+    height: 700px;
+
+    color: #fff;
+    font-size: 18px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 250px;
+}
+@media (max-width: 900px) {
+    .left_inf_bl{
+        float: none;
+        width: 100%;
+        margin-top: -24px;
+    }
+    .right_inf_bl{
+         width: 100%;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+    }
+}
+
+.master_block span {
+    color: rgb(255, 255,255);
+    font-size: 16px;
+}

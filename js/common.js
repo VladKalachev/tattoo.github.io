@@ -22,6 +22,7 @@ $(document).ready(function() {
 console.log(w2);
 
 	$('.header1').css('height', he1);
+	$('.left_inf_bl').css('height', he1);
 	$('.bottomBtn').css('top', he2);
 	$('.logo').css('top', he3);
 	$('.header_name').css('top', he4);
