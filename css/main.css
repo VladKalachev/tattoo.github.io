@@ -1235,7 +1235,7 @@ a.bottomBtn:hover {
 }
 
 .s_rewview3 {
-    background-image: url(../img/10114453903_e43b4388de_o.jpg);
+    background-image: url(../img/banner.original.jpg);
     background-repeat: repeat-x;
     background-attachment: fixed;
     min-height: 500px;
@@ -1264,7 +1264,7 @@ a.bottomBtn:hover {
 .header_name2 {
     position: absolute;
     top: 170px;
-    left: 23%;
+    left: 26%;
     color: white;
     text-align: center;
 }
@@ -1382,10 +1382,10 @@ a.bottomBtn:hover {
     height: 700px;
 
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 160px;
     padding-right: 160px;
-    padding-top: 250px;
+    padding-top: 230px;
 }
 @media (max-width: 900px) {
     .left_inf_bl{
@@ -1405,3 +1405,150 @@ a.bottomBtn:hover {
     color: rgb(255, 255,255);
     font-size: 16px;
 }
+
+
+/* The Gallery: */
+
+.portfolio-container,
+.portfolio-list1 {
+        width: 100%;
+}
+
+.portfolio-list1 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+
+.portfolio-list1 li {
+        position: relative;
+        display: block;
+        float: left;
+        width: 20%;
+}
+
+.portfolio-list1 li img {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: 350px;
+        vertical-align: top;
+}
+
+
+.portfolio-list1 li img {
+
+ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+, IE10 */
+   
+    
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
+
+.portfolio-list1 li {
+    overflow: hidden;
+}
+
+.portfolio-list1 li img:hover  {
+     filter: none;
+    -webkit-filter: grayscale(0%);
+      transform: scale(1.1, 1.1);
+}
+
+
+
+.portfolio-list1 .info {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 81px;
+}
+
+.portfolio-list1 a:hover:after {
+        opacity: 1;
+}
+
+ all and (max-width: 1080px) {
+        .portfolio-list1 li {
+                width: 25%;
+        }
+}
+
+@media all and (max-width: 879px) {
+        .portfolio-list1 li {
+                width: 33.3333333%;
+        }
+}
+
+@media all and (max-width: 560px) {
+        .portfolio-list1 li {
+                width: 50%;
+        }
+
+        .top {
+            display: none;
+        }
+}
+
+@media all and (max-width: 480px) {
+    .portfolio-list1 li {
+                width: 70%;
+              float: none;
+                clear: both;
+                margin: 0 auto;
+        }
+.portfolio-list1 a:after {
+        width: 100%;
+    }
+    .portfolio-list1 li img {
+                width: 100%;
+                margin: 0 auto;
+        }
+}
+
+/* ///////////// */
+
+.block_inf_all1{
+    width: 100%;
+    margin-top: -84px;
+}
+
+.left_inf_bl1 {
+    width: 50%;
+    display: block;
+    float: right;
+    background: url(../img/bakg2.jpg) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.right_inf_bl1 {
+    width: 50%;
+    display: block;
+    height: 700px;
+
+    color: #fff;
+    font-size: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 230px;
+}
+@media (max-width: 900px) {
+    .left_inf_bl1{
+        float: none;
+        width: 100%;
+        margin-top: -24px;
+    }
+    .right_inf_bl1{
+         width: 100%;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+    }
+}
+
+
+/* ///////////// */

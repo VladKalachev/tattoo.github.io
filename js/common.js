@@ -19,10 +19,11 @@ $(document).ready(function() {
 	    he5 = he1/2 - 100,
 	    w1 = $(window).width()
 	    w2 = w1/2;
-console.log(w2);
+//console.log(w2);
 
 	$('.header1').css('height', he1);
 	$('.left_inf_bl').css('height', he1);
+	$('.left_inf_bl1').css('height', he1);
 	$('.bottomBtn').css('top', he2);
 	$('.logo').css('top', he3);
 	$('.header_name').css('top', he4);
