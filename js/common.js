@@ -1,5 +1,38 @@
 $(document).ready(function() {
 
+
+
+
+
+	/*hover*/
+
+	$('li.dropdown').hover(
+		function(){
+		  console.log('hover');
+		  $(this).addClass('open');
+		},
+		function(){
+		  console.log('not hover');
+		  $(this).removeClass('open')
+	});
+
+	/*$('li.dropdown').hover(
+		function(){
+			 console.log(111);
+			$(this).addClass('open');
+		},
+		function(){
+  		 console.log(222);
+	});
+*/
+
+
+
+/*	.hover(function(){
+		console.log(111);
+		$(this).addClass('open');
+	});*/
+
 /*popup*/
 
 	$('.mypopup-close').click(function(){
@@ -15,7 +48,7 @@ $(document).ready(function() {
 	var he1 = $(window).height(),
 	    he2 = he1 - 200,
 	    he3 = he1/2 - 220,
-	    he4 = he1/2 - 180,
+	    he4 = he1/2 - 220,
 	    he5 = he1/2 - 100,
 	    w1 = $(window).width()
 	    w2 = w1/2;
