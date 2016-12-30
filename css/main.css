@@ -1395,6 +1395,32 @@ a.bottomBtn:hover {
     width: 100%;
 }
 
+.tattoo_back {
+    background-image: url(../img/StockSnap_TDLHEX7SWH.jpg) !important;
+
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+    position: relative;
+    top: -84px;
+}
+
+.tattoo_back2 {
+    background-image: url(../img/StockSnap_2CKEJKBGHZ.jpg) !important;
+
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+    position: relative;
+    top: -84px;
+}
+
 .mosaicflow__item img:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
