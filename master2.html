@@ -13,10 +13,6 @@
 
 	<link rel="shortcut icon" href="img/favicon/faviconka_ru_343.gif" type="image/x-icon">
 
-	<!-- <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -38,28 +34,66 @@
 
 	<script src="libs/modernizr/modernizr.js"></script>
   <script src="libs/pixi.js-master/pixi.js"></script>
-  <script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
+<script src="https://vk.com/js/api/openapi.js?133" type="text/javascript"></script>
+
+
+  <style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  }
+
+body {
+  font-family:"Helvetica Neue", Arial, sans-serif;
+  }
+
+.mosaicflow__column {
+  float:left;
+  }
+
+.mosaicflow__item {
+  position:relative;
+  }
+  .mosaicflow__item img {
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    }
+  .mosaicflow__item p {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    margin:0;
+    padding:5px;
+    background:hsla(0,0%,0%,.5);
+    color:#fff;
+    font-size:14px;
+    text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+    opacity:0;
+    -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+       -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+         -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+            transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+    }
+  .mosaicflow__item:hover p {
+    opacity:1;
+    }
+  </style>
 </head>
 
-<body>
+<body class="fixfon">
 
 
 
-	<!-- HEADER -->
+<!-- HEADER -->
 
-
-<div class="crt-parallaxvideo">
-
-    <video autoplay muted loop>
-       <source src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.mp4">
-       <source src="http://assets.cdn.wolfthemes.com/tf/tattoopro/tattoopro.jpg" type="video/ogg">
-    </video>
-                     
-  </div>
 
 <!-- NAV -->
 
-  <nav id="navbar-main" class="navbar navbar-inverse">
+   <nav id="navbar-main" class="navbar navbar-inverse navbar-inverse-black">
     <div class="container">
 
       <div class="navbar-header">
@@ -75,7 +109,7 @@
         
         <ul class="nav navbar-nav">
             <li >
-            <a href="#top">Главная</a>
+            <a href="index.html">Главная</a>
             </li>
 
              <li class="dropdown">
@@ -91,10 +125,10 @@
             <a href="piercings.html">Пирсинг</a>
           </li>
 
-          
+       
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Мастера
+              <a class="dropdown-toggle redClass" data-toggle="dropdown" href="#">Мастера
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="master.html">Doc Serg</a></li>
@@ -103,16 +137,8 @@
               </ul>
             </li>
 
-        
-
             <li>
-            <a href="#s_2">Последние работы</a>
-            </li>
-
-         
-
-            <li>
-            <a href="reviews.html">Отзывы</a>
+           <a href="reviews.html">Отзывы</a>
             </li>
 
         </ul>
@@ -132,147 +158,43 @@
 
   </nav>
 
-<header class="header1 header-fix">
-
-
- <!-- CONTENT HEADER -->
-
-   <div class="container">
-
-         <div class="row">
-
-             <div class="col-xs-12 col-md-12">
-
-             <div class="tattooLogo">
-               
-             </div>
-
-
-<div class="logo">
-  
-</div>
-
-               <div class="header_name">
-
-                  <h1>Hand Made <br> Modification</h1>
-
-                  <span>ТАТУ-СТУДИЯ СМОЛЕНСКА</span>
-                  <br>
-                   <h3 style="line-height: 10px;"><span style="font-size: 25px;" >&#935;</span> татуировки</h3>
-                    <h3 style="line-height: 10px;"><span style="font-size: 25px;">&#935;</span> пирсинг</h3>
-                   <!--  <h3>- лазерное удаление татуировок и перманентного макияжа</h3> -->
-                    <h3 style="line-height: 10px;"><span style="font-size: 25px;">&#935;</span> перманентный макияж</h3>
-                    <h3 style="line-height: 10px;"><span style="font-size: 25px;">&#935;</span> разработка индивидуальных эскизов</h3>
-                  <br>
-                  <span>Тухачевского, 3</span><br />
-                   <span style="font-size: 17px;">+79516944061</span>
-                   
-                    <br>
-                  <span>modification67@mail.ru</span>
-                    
-<br>
-                 
-
-
-                   
-
-               </div>
-
-              <a class="bottomBtn hid" href="#s_1">
-                
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-
-              </a>
-
-            
-             </div>
-
-         </div>
-
-   </div>
-
-
-
-</header>
-
 
 
 <section id="s_1"  class="block_inf_all">
 
-    <div class="left_inf_bl">
+    <div class="left_inf_bl left_inf_bl_master2">
     <!--  <img src="img/Pc2LFEc9bqM.jpg" alt=""> -->
     </div>
 
     <div class="right_inf_bl bak_blak">
+
+    <h3>One More</h3>
    
-           Добро пожаловать в нашу тату студию!<br />
-            На сайте вы можете ознакомиться с работами наших мастеров и всем перечнем услуг,  где по приемлемой цене может сделать ваш заказ.<br />
-            Мы предоставляем следующие услуги:<br />
-            <ul>
-              <li>татуировки;</li>
-              <li>пирсинг;</li>
-              <li>лазерное удаление татуировок;</li>
-              <li>перманентный макияж;</li>
-             
-              <li>лазерное удаление перманентного макияжа без шрамов</li>
-            </ul>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, fugiat? Distinctio asperiores magni laboriosam a tempora iure, ratione, architecto quasi dolorum porro, est explicabo fugiat culpa amet, unde nulla quis.</p>
+
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://vk.com/one_more_tattoo" class="fa fa-vk"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-pinterest"></a>
 
        
     </div>
 
 </section>
 
-<!-- OUR MASTERS-->
-
-<!-- SECTION 1-->
-
-<section  class="main_galery ">
-  <div class="container">
-  <div class="row">
-
-              <div class="col-md-12">
-
-                   <h2 class="titleWork">
-                      Наши мастера
-                   </h2>
-
-             
-              </div>
-
-          </div>
-  </div>
-
-<div class="containerMy">
-    <a href="master.html">
-      <div class="master_block master1">Doc Serg<br />
-      <span class="hover_title_master">Мастер татуировки и пирсинга</span>
-      </div>
-    </a>
-    <a href="master2.html">
-      <div class="master_block master2">One More<br />
-      <span class="hover_title_master">Кольщик</span>
-      </div>
-    </a>
-    
-    <a href="master3.html">
-      <div class="master_block master3">Алексей Молчанов<br />
-      <span class="hover_title_master">Кольщик</span>
-      </div>
-    </a>
-</div>
-
-</section>
 
 
 
 
-<section  id="s_2" class="main_galery">
+
+
+<section id="s_1" class="main_galery">
    <div class="container">
         <div class="row">
 
             <div class="col-md-12">
             <h2 class="titleWork">
-                Наши работы
+              Работы мастера
               </h2>
             </div>
         </div>
@@ -280,8 +202,98 @@
 </section>
 
 
+
 <section id="s_3" class="portfolio-container group">
-    <ul class="portfolio-list group">
+
+
+<!-- <div class="mosaicflow" data-item-height-calculation="attribute">
+    
+ <a class="popupImg" href="img/prising/1.jpg">
+  <div class="mosaicflow__item">
+      <img  src="img/prising/1.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+<a class="popupImg" href="img/prising/2.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/2.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+<a class="popupImg" href="img/prising/3.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/3.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+
+ <a class="popupImg" href="img/prising/4.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/4.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ <a class="popupImg" href="img/prising/5.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/5.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ <a class="popupImg" href="img/prising/6.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/6.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ <a class="popupImg" href="img/prising/7.jpg">
+  <div class="mosaicflow__item">
+      <img width="300" height="200" src="img/prising/7.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ <a class="popupImg" href="img/prising/8.jpg">
+  <div class="mosaicflow__item">
+      <img src="img/prising/8.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ 
+
+ <a class="popupImg" href="img/prising/10.jpg">
+  <div class="mosaicflow__item">
+      <img width="300" height="300" src="img/prising/10.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+<a class="popupImg" href="img/prising/9.jpg">
+  <div class="mosaicflow__item">
+      <img width="300" height="200" src="img/prising/9.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a>
+
+ <a class="popupImg" href="img/prising/11.jpg">
+  <div class="mosaicflow__item">
+      <img width="300" height="200" src="img/prising/11.jpg"  alt="">
+      <p>Dessi the Dachshund</p>
+  </div>
+</a> -->
+
+
+
+    
+
+
+
+<ul class="portfolio-list group">
         
         <li>
             <a class="popupImg" href="img/original/12.jpg">
@@ -358,183 +370,10 @@
 
 
 
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 3, width: "300", height: "500", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 77650230);
+</script>
 
-
- <!-- <section id="s_4" class="main_galery">
-   <div class="container">
-        <div class="row">
- 
-            <div class="col-md-12">
-            <h2 class="titleWork">
-               Товары в наличие
-              </h2>
-            </div>
-        </div>
-      </div>
- </section>
- 
- <section  class="s_rewview2 s_dark"  data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
- 
- 
-        <div class="top_high">
-          <h2>В наличие имеются товары для тату мастеров</h2>
-        <br>
-        <br>
-        <br>
-        <span> Для заказа перейдите в каталог </span>
-        <br>
-        <br>
-        <a href="card_orders.html" class="button btn_red popup_c">Каталог</a>
- 
-        </div>
-        
- 
-      </div>
- 
- 
-    </div>
-    
-  </div>
- </section> -->
-
-
-
-
-<!-- <section class="main_galery" id="s_5">
-   <div class="container">
-        <div class="row">
-
-            <div class="col-md-12">
-            <h2 class="titleWork">
-               Наши клиенты
-              </h2>
-            </div>
-        </div>
-      </div>
-</section>
-
-
- <section class="s_rewview s_dark"  data-stellar-background-ratio="0.5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 style="margin-top: 69px;">Отзывы</h2>
-      </div>
-    </div>
-
-
-    <div class="video-bg-container"><video class="video-bg" preload="auto" autoplay="" loop="loop" muted="" volume="0" style="width: 100%; height: auto; margin-left: 0px; margin-top: -110px;"><source src="https://0.s3.envato.com/h264-video-previews/166ecb07-b05a-4a70-aea7-6f0993850289/9903135.mp4" type="video/mp4"></video><div class="video-bg-overlay"></div></div>
-
-    <div class="row-overlay" style="background-color:#000000;opacity:0.8;"></div>
-
-    <div class="row">
-      <div class="col-md-12">
-
-
-      
-        <div class="carousel">
-          <div class="review_item">
-          <div class="image_wrap">
-            <a href="img/review.jpg" class="popup"><img src="img/review.jpg" alt="Alt"></a>
-          </div>
-          <h4>Name</h4>
-         
-          <div class="row">
-            <p class="col-md-8">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore porro facere hic sed aspernatur molestias ipsa natus necessitatibus. Quia sed libero recusandae corrupti odio similique vel error eos, aliquid dolor!
-            </p>
-          </div>
-          </div>
-
-
-          <div class="review_item">
-          <div class="image_wrap">
-            <a href="img/review.jpg" class="popup"><img src="img/review.jpg" alt="Alt"></a>
-          </div>
-          <h4>Name</h4>
-          
-          <div class="row">
-            <p class="col-md-8">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore porro facere hic sed aspernatur molestias ipsa natus necessitatibus. Quia sed libero recusandae corrupti odio similique vel error eos, aliquid dolor!
-            </p>
-          </div>
-          </div>
-
-
-          <div class="review_item">
-          <div class="image_wrap">
-            <a href="img/review.jpg" class="popup"><img src="img/review.jpg" alt="Alt"></a>
-          </div>
-          <h4>Name</h4>
-          
-          <div class="row">
-            <p class="col-md-8">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore porro facere hic sed aspernatur molestias ipsa natus necessitatibus. Quia sed libero recusandae corrupti odio similique vel error eos, aliquid dolor!
-            </p>
-          </div>
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
- </section> -->
-
-
-
-<section class="main_galery">
-   <div class="container">
-        <div class="row">
-
-            <div class="col-md-12">
-            <h2 class="titleWork">
-               Как нас найти
-              </h2>
-            </div>
-        </div>
-      </div>
-</section>
-
-<section class="s_conracts">
-
-  <div class="wrapper clearfix">
-    <div class="tab_content">
-        
-        <div class="tab_item">
-        
-
-            <div class="map">
-
-            <div class="address_map">
-                 <h2>Адрес:</h2>
-
-                <p>
-                 <span class="icon_tattoo">
-                   ТАТУ-СТУДИЯ СМОЛЕНСКА 
-                  г.Смоленск, Тухачевского, 3 
-                 </span> 
-                </p>
-                
-                <h2>Телефон:</h2>
-
-                <p  class="icon_tattoo2">+89516944061</p>
-
-            </div>
-
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cncpNMtmNp97kMzP7eObLCR9bsyvE31a&amp;height=480&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-
-            </div>
-
-        </div>
-        
-    </div>
-</div>
-</section>
 
 <section id="contacts" class="s_contacts bg_light">
   <div class="section_header">
@@ -550,16 +389,15 @@
           <div class="contact_box">
             <div class="contacts_icon icon-basic-geolocalize-05"></div>
             <h3>Адрес:</h3>
-           <p> <span class="icon_tattoo">
+           <p>
                   ТАТУ-СТУДИЯ СМОЛЕНСКА 
                   г.Смоленск, Тухачевского, 3 
-                </span>
             </p>
           </div>
           <div class="contact_box">
             <div class="contacts_icon icon-basic-smartphone"></div>
             <h3>Телефон:</h3>
-            <p class="icon_tattoo2">+89516944061</p>
+            <p>+89516944061</p>
           </div>
          
         </div>
@@ -577,8 +415,7 @@
               <span class="help-block text-danger"></span>
             </label>
 
-
-             <label class="form-group">
+            <label class="form-group">
               <span class="color_element">*</span> Ваш телефон:
               <input type="text" name="phone" placeholder="Ваш телефон" data-validation-required-message="Не корректно введен телефон" required />
               <span class="help-block text-danger"></span>
@@ -598,10 +435,6 @@
 </section>
 
 
-
-<script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 3, width: "300", height: "500", color1: 'FFFFFF', color2: '000000', color3: '5E81A8'}, 77650230);
-</script>
 
 
 
@@ -665,7 +498,11 @@ VK.Widgets.Group("vk_groups", {mode: 3, width: "300", height: "500", color1: 'FF
     <script src="libs/owl/owl.carousel.min.js"></script>
 <script src="libs/jquery.malihu.PageScroll2id.min.js"></script>
 
+<script src="js/jquery.mosaicflow.min.js"></script>
+
 	<script src="js/common.js"></script>
+
+
 
 
   

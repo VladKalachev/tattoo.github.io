@@ -1,3 +1,11 @@
+.navbar-inverse-black.affix-top {
+    background-color: #000 !important;
+}
+
+.navbar-inverse-black.affix {
+   background-color: #000 !important; 
+}
+
 span.hover_title_master {
     display: none;
 }
@@ -15,6 +23,19 @@ span.hover_title_master {
     background-color: #c74735 !important;
     border-radius: 0;
     
+}
+
+.block_comment {
+    margin-bottom: 15px;
+}
+.text_comment {
+    color: #fff;
+}
+
+.avatar_comment img{
+    margin-top: 10px;
+    margin-right: 15px;
+    border: 4px solid #c74735;
 }
 
 .dropdown-menu > li > a {
@@ -1395,6 +1416,24 @@ a.bottomBtn:hover {
     width: 100%;
 }
 
+
+.block_comment .avatar_comment {
+    float: left;
+}
+
+.tattoo_back3 {
+    background-image: url(../img/StockSnap_IWSXWATZ5O.jpg) !important;
+
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-position: top center;
+    background-size: cover;
+    background-color: #24201E;
+    position: relative;
+    top: -84px;
+}
+
 .tattoo_back {
     background-image: url(../img/StockSnap_TDLHEX7SWH.jpg) !important;
 
@@ -1584,6 +1623,31 @@ a.bottomBtn:hover {
 .block_inf_all1{
     width: 100%;
     margin-top: -84px;
+}
+
+.left_inf_bl_master {
+    background: url(../img/1.jpg) no-repeat !important;
+}
+
+.left_inf_bl_master2 {
+    background: url(../img/2.jpg) no-repeat !important;
+}
+
+.left_inf_bl_master3 {
+    background: url(../img/3.jpg) no-repeat !important;
+    background-position: -169px 0px !important;
+}
+
+.right_inf_bl .fa{
+    margin: 0 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.right_inf_bl .fa:hover{
+    color: #c74735;
+    background-color: rgba(0,0,0,0);
+    text-decoration: none;
 }
 
 .left_inf_bl1 {
