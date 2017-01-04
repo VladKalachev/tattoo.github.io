@@ -25,6 +25,18 @@ span.hover_title_master {
     
 }
 
+.gray_color {
+    color: gray !important;
+}
+
+.new_section_with {
+    background: rgb(246,246,246)!important;
+}
+
+.black_title {
+    color: #000 !important;
+}
+
 .block_comment {
     margin-bottom: 15px;
 }
@@ -1623,6 +1635,11 @@ a.bottomBtn:hover {
 .block_inf_all1{
     width: 100%;
     margin-top: -84px;
+}
+
+.left_inf_bl_tattoo {
+    background: url(../img/MxSBgxZkh4s.jpg) no-repeat !important;
+    
 }
 
 .left_inf_bl_master {
