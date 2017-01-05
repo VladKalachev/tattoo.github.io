@@ -1488,6 +1488,17 @@ a.bottomBtn:hover {
     overflow: hidden;
 }
 
+.left_inf_bl22 {
+    width: 50%;
+    display: block;
+    float: right;
+    
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
 .left_inf_bl {
     width: 50%;
     display: block;
@@ -1713,12 +1724,12 @@ a.bottomBtn:hover {
 
 /* style gallery */
 
-.grid {
+/* .grid {
     position: relative;
     margin: 0 auto;
 }
-
-.js .grid::after {
+ */
+/* .js .grid::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -1743,7 +1754,7 @@ a.bottomBtn:hover {
 
 .grid__item--current {
     opacity: 0 !important;
-}
+} */
 
 .img-wrap {
     display: block;

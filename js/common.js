@@ -57,6 +57,13 @@ $(document).ready(function() {
 	$('.header1').css('height', he1);
 	$('.left_inf_bl').css('height', he1);
 	$('.left_inf_bl1').css('height', he1);
+		
+		$('.left_inf_bl22').css('height', he1);
+		$('.left_inf_bl22 img').css('height', he1);
+
+	/*$('.grid').css('height', he1);
+	$('.block-content').css('height', he1);*/
+
 	$('.bottomBtn').css('top', he2);
 	$('.logo').css('top', he3);
 	$('.header_name').css('top', he4);
